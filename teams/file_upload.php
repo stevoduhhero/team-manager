@@ -3,6 +3,14 @@
   include '../header.html';
   
   $textfile = "";
+  function dust($txt) {
+	$count = substr_count($txt, ".");
+	if ($count > 0) {
+		$txt = explode(".", $txt);
+		$txt = $txt[0];
+	}
+	return $txt;
+  }
   function ability($id) {
 	$abilities = nl2br(file_get_contents("abilities.txt"));
 	$splinter = explode("<br />", $abilities);
@@ -46,7 +54,7 @@
   if (isset($filecount)) {
 	  for ($i = 0; $i < $filecount; $i++) {
 		$c_tempname = $_FILES["file"]["tmp_name"][$i];
-		$c_filename = $_FILES["file"]["name"][$i];
+		$c_filename = dust($_FILES["file"]["name"][$i]);
 		move_uploaded_file($c_tempname, "temp/" . $c_filename);
 		$fc = file_get_contents("temp/" . $c_filename);
 		$splinter = explode("<Pokemon", $fc);
@@ -106,8 +114,8 @@
 			$move4 = explode('<Move>', $c);
 			$move4 = explode('</Move>', $move4[4]);
 			$move4 = move($move4[0]);
-			
-			$textfile = $textfile . "$pokename @ $itemname\nTrait: $ability\nEVs: $evs\n$nature Nature\n- $move1\n- $move2\n- $move3\n- $move4\n\n";
+			$stuff = $pokename . ' @ ' . $itemname . '<br />Trait: ' . $ability . '<br />EVs: ' . $evs . '<br />' . $nature . ' Nature<br />- ' . $move1 . '<br />- ' . $move2 . '<br />- ' . $move3 . '<br />- ' . $move4 . '<br /><br />';
+			$textfile = $textfile . str_replace("<br />", "\n", str_replace("\n", "", $stuff));
 		}
 		$c_filenameclean = clean($c_filename);
 		$count = sqlcount("SELECT * FROM teams WHERE teamname='$c_filenameclean' AND user_id='$user_id'");
