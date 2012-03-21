@@ -1,0 +1,28 @@
+<div class="comment-form">
+<h3>Add Comment:</h3>
+<div><textarea id="text"></textarea></div>
+<div><button id="submit">Submit</button><button id="reset">Clear</button></div>
+</div>
+<div>&nbsp;</div>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("#submit").click(function() {
+		if ($("#text").val().replace(/ /g, '') == "") {
+			return false;
+		}
+		$.ajax({
+			type: "POST",
+			url: "comment.php",
+			data: "text=" + $("#text").val() + "&thing_id=<?php echo $id; ?>",
+			success: function(data) {
+				notice(data);
+				$("#text").val("");
+				$(".comments").load("comments.php?id=<?php echo $id; ?>");
+			}
+		});
+	});
+	$("#reset").click(function() {
+		$("#text").val("");
+	});
+});
+</script>

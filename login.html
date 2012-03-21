@@ -1,0 +1,37 @@
+<div class="box">
+<h3>You are not currently logged in. You should!!!</h3>
+<form id="login" action="/<?php echo $foldername; ?>/login_do.php" method="POST">
+<div>
+<div><input type="text" value="Username..." class="username" name="username" /></div>
+<div><input type="password" value="password" class="password" name="password" /></div>
+<div><button type="submit">Login</button></div>
+</div>
+<div><a href="">Or register if you don't have an account.</a></div>
+</form>
+</div>
+<script type="text/javascript">
+$(".username").focus(function() {
+	if (this.value == "Username...") {
+		this.value = "";
+		this.style.color = "#000000";
+	}
+});
+$(".username").blur(function() {
+	if (this.value == "") {
+		this.value = "Username...";
+		this.style.color = "#b6b6b6";
+	}
+});
+$(".password").focus(function() {
+	if (this.value == "password") {
+		this.value = "";
+		this.style.color = "#000000";
+	}
+});
+$(".password").blur(function() {
+	if (this.value == "") {
+		this.value = "password";
+		this.style.color = "#b6b6b6";
+	}
+});
+</script>
