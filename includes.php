@@ -3,7 +3,7 @@
   include 'dbconnect.php';
   include 'functions.php';
   
-  $foldername = "tm";
+  $foldername = "team-manager";
   $ip = $_SERVER['REMOTE_ADDR'];
   date_default_timezone_set('America/Los_Angeles');
   $time = time();
