@@ -3,8 +3,8 @@
   include '../header.html';
   
   function dust($text) {
-	$find = array(" ", "<div>");
-	$replace = array("", "");
+	$find = array(" ", "<div>", "(M)", "(F)");
+	$replace = array("", "", "", "");
 	return htmlspecialchars(strtolower(str_replace($find, $replace, $text)));
   }
   
