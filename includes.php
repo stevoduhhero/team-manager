@@ -24,6 +24,6 @@
   $sql = "UPDATE users SET online='0' WHERE last_activity<'$cutoff'";
   mysql_query($sql) or die(mysql_error());
   //update activity
-  $sql = "UPDATE users SET online='1' AND last_activity='$time' WHERE id='$user_id'";
+  $sql = "UPDATE users SET online='1', last_activity='$time' WHERE id='$user_id'";
   mysql_query($sql) or die(mysql_error());
 ?>
