@@ -1,0 +1,305 @@
+(No Item)
+Big Root
+Blue Scarf
+BrightPowder
+Choice Band
+Choice Scarf
+Choice Specs
+Destiny Knot
+Expert Belt
+Focus Band
+Focus Sash
+Full Incense
+Green Scarf
+Lagging Tail
+Lax Incense
+Leftovers
+Luck Incense
+Mental Herb
+Metal Powder
+Muscle Band
+Odd Incense
+Pink Scarf
+Power Herb
+Pure Incense
+Quick Powder
+Reaper Cloth
+Red Scarf
+Rock Incense
+Rose Incense
+Sea Incense
+Shed Shell
+Silk Scarf
+Silver Powder
+Smooth Rock
+Soft Sand
+Soothe Bell
+Wave Incense
+White Herb
+Wide Lens
+Wise Glasses
+Yellow Scarf
+Zoom Lens
+Amulet Coin
+Antidote
+Awakening
+Berry Juice
+Big Pearl
+Big Mushroom
+Black Belt
+Black Flute
+Black Sludge
+BlackGlasses
+Blue Flute
+Blue Shard
+Burn Heal
+Calcium
+Carbos
+Charcoal
+Cleanse Tag
+Damp Mulch
+DeepSeaScale
+Dire Hit
+Dragon Scale
+Elixir
+Energy Root
+EnergyPowder
+Escape Rope
+Ether
+Everstone
+Exp. Share
+Fire Stone
+Flame Orb
+Fluffy Tail
+Fresh Water
+Full Heal
+Full Restore
+Gooey Mulch
+Green Shard
+Growth Mulch
+Guard Spec.
+Heal Powder
+Heart Scale
+Honey
+HP Up
+Hyper Potion
+Ice Heal
+Iron
+King's Rock
+Lava Cookie
+Leaf Stone
+Lemonade
+Life Orb
+Light Ball
+Light Clay
+Lucky Egg
+Magnet
+Max Elixir
+Max Ether
+Max Potion
+Max Repel
+Max Revive
+Metal Coat
+Metronome
+Miracle Seed
+MooMoo Milk
+Moon Stone
+Mystic Water
+NeverMeltIce
+Nugget
+Old Gateau
+Parlyz Heal
+Pearl
+Poké Doll
+Potion
+PP Max
+PP Up
+Protein
+Rare Candy
+Razor Fang
+Red Flute
+Red Shard
+Repel
+Revival Herb
+Revive
+Sacred Ash
+Scope Lens
+Shell Bell
+Shoal Salt
+Shoal Shell
+Smoke Ball
+Soda Pop
+Soul Dew
+Spell Tag
+Stable Mulch
+Star Piece
+Stardust
+Sun Stone
+Super Potion
+Super Repel
+Thunderstone
+TinyMushroom
+Toxic Orb
+TwistedSpoon
+Up-Grade
+Water Stone
+White Flute
+X Accuracy
+X Attack
+X Defend
+X Special
+X Sp. Def
+X Speed
+Yellow Flute
+Yellow Shard
+Zinc
+Icy Rock
+Lucky Punch
+Dubious Disc
+Sharp Beak
+Adamant Orb
+Damp Rock
+Heat Rock
+Lustrous Orb
+Macho Brace
+Stick
+Dragon Fang
+Poison Barb
+Power Anklet
+Power Band
+Power Belt
+Power Bracer
+Power Lens
+Power Weight
+Dawn Stone
+Dusk Stone
+Electirizer
+Magmarizer
+Odd Keystone
+Oval Stone
+Protector
+Quick Claw
+Razor Claw
+Shiny Stone
+Sticky Barb
+DeepSeaTooth
+Draco Plate
+Dread Plate
+Earth Plate
+Fist Plate
+Flame Plate
+Grip Claw
+Icicle Plate
+Insect Plate
+Iron Plate
+Meadow Plate
+Mind Plate
+Sky Plate
+Splash Plate
+Spooky Plate
+Stone Plate
+Thick Club
+Toxic Plate
+Zap Plate
+Armor Fossil
+Claw Fossil
+Dome Fossil
+Hard Stone
+Helix Fossil
+Old Amber
+Rare Bone
+Root Fossil
+Skull Fossil
+Iron Ball
+Griseous Orb
+Air Mail
+Bloom Mail
+Brick Mail
+Bubble Mail
+Flame Mail
+Grass Mail
+Harbor Mail
+Heart Mail
+Mosaic Mail
+Snow Mail
+Space Mail
+Steel Mail
+Tunnel Mail
+Douse Drive
+Shock Drive
+Burn Drive
+Chill Drive
+Sweet Heart
+Prism Scale
+Eviolite
+Float Stone
+Rocky Helmet
+Air Balloon
+Red Card
+Ring Target
+Binding Band
+Absorb Bulb
+Cell Battery
+Eject Button
+Fire Gem
+Water Gem
+Electric Gem
+Grass Gem
+Ice Gem
+Fight Gem
+Poison Gem
+Earth Gem
+Flying Gem
+Psychic Gem
+Bug Gem
+Rock Gem
+Ghost Gem
+Dragon Gem
+Dark Gem
+Steel Gem
+Normal Gem
+Health Wing
+Muscle Wing
+Resist Wing
+Genius Wing
+Clever Wing
+Swift Wing
+Pretty Wing
+Dream Ball
+BalmMushroom
+Big Nugget
+Pearl String
+Comet Shard
+Relic Copper
+Relic Silver
+Relice Gold
+Relic Vase
+Relic Band
+Relic Statue
+Relic Crown
+Casteliacone
+Dire Hit 2
+X Speed 2
+X Special 2
+X Sp. Def 2
+X Defend 2
+X Attack 2
+X Accuracy 2
+X Speed 3
+X Special 3
+X Sp. Def 3
+X Defend 3
+X Attack 3
+X Accuracy 3
+X Speed 6
+X Special 6
+X Sp. Def 6
+X Defend 6
+X Attack 6
+X Accuracy 6
+Ability Urge
+Item Drop
+Item Urge
+Reset Urge
+Dire Hit 3
+Berserk Gene
