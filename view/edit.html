@@ -1,0 +1,20 @@
+<form method="POST">
+<input type="hidden" name="id" value="<?php echo $id; ?>" />
+<table width="100%">
+<tr valign="top">
+<td align="center" width="50%">
+<div class="team-edit-form">
+<h1>Team</h1>
+<textarea name="team" onclick="this.select();"><?php echo $team; ?></textarea>
+</div>
+</td>
+<td align="center">
+<div class="team-edit-form">
+<h1>Description</h1>
+<textarea name="description"><?php echo $description; ?></textarea>
+</div>
+</td>
+</tr>
+</table>
+<button class="squared">Update</button> <button class="squared" type="reset">Reset</button>
+</form>
