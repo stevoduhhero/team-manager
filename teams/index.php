@@ -25,7 +25,7 @@
 	
 	echo '<h1 class="center" style="margin-top:5px;">Teams</h1>';
 	
-	$count = sqlcount("SELECT * FROM teams WHERE user_id='$user_id'");
+	$count = sqlcount("SELECT * FROM teams WHERE user_id='$id'");
 	echo '<div class="box">In total ', $cusername ,' has <b>', $count , '</b> teams.</div>';
 	
 	echo '<div class="ul-teams">';
