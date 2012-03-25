@@ -45,6 +45,11 @@
 	$splinter = explode($id . ":" . $forme . " ", $pokemons);
 	$pokemonname = explode("<br />", $splinter[1]);
 	$pokemonname = $pokemonname[0];
+	if (!$pokemonname) {
+		$splinter = explode($id . ":" . $forme . ":H ", $pokemons);
+		$pokemonname = explode("<br />", $splinter[1]);
+		$pokemonname = $pokemonname[0];
+	}
 	return $pokemonname;
   }
   if (isset($_POST['filecount'])) {

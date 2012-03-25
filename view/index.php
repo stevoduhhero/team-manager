@@ -48,6 +48,12 @@
 	else {
 		$add = $p[$i];
 	}
+	//problematicstuff
+		//since PS doesn't have animated sprites for any arceus other than the original we have to make sure we use that one for each arceus
+		$count3 = substr_count($add, "Arceus");
+		if ($count3 > 0) {
+			$add = "Arceus";
+		}
 	$currentglance = '<img src="http://play.pokemonshowdown.com/sprites/bwani/' . $add . '.gif">';
 	$glance = $glance . $currentglance;
 	$p[$i] = $currentglance;
