@@ -1,7 +1,9 @@
 <?php
   include 'includes.php';
   include 'header.html';
-
+?>
+<div class="box"><h1>Sorry the database was accidentally cleared. If you already had an account you're going to have to register again... :(</h1></div>
+<?php
 	//latest teams
 	echo '<h2>Latest Teams:</h2>';
 	echo '<div class="ul-teams">';

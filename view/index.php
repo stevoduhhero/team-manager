@@ -38,7 +38,17 @@
   
   $glance = "";
   for ($i = 0; $i < $count; $i++) {
-	$currentglance = '<img src="http://play.pokemonshowdown.com/sprites/bwani/' . $p[$i] . '.gif">';
+	$explosion = explode("(", $p[$i]);
+	$count2 = substr_count($p[$i], "(");
+	if ($count2 > 0) {
+		$add = $explosion[1];
+		$explosion2 = explode(")", $add);
+		$add = $explosion2[0];
+	}
+	else {
+		$add = $p[$i];
+	}
+	$currentglance = '<img src="http://play.pokemonshowdown.com/sprites/bwani/' . $add . '.gif">';
 	$glance = $glance . $currentglance;
 	$p[$i] = $currentglance;
   }
