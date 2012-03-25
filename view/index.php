@@ -54,8 +54,8 @@
 		if ($count3 > 0) {
 			$add = "arceus";
 		}
-	$f = array("-");
-	$r = array("");
+	$f = array("ho-oh");
+	$r = array("hooh");
 	$add = str_replace($f, $r, $add);
 	$currentglance = '<img src="http://play.pokemonshowdown.com/sprites/bwani/' . $add . '.gif">';
 	$glance = $glance . $currentglance;
@@ -85,6 +85,8 @@
   if (isset($_SESSION['username'])) {
 	include '../comment.html';
   }
+  
+  echo '<div>&nbsp;</div>';
   
   include '../footer.html';
 ?>
