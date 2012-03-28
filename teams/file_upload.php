@@ -1,7 +1,11 @@
 <?php
   include '../includes.php';
   include '../header.html';
-  
+
+  $private = clean($_POST['private']);
+  if ($private != 0) {
+	$private = 1;
+  }
   $textfile = "";
   function dust($txt) {
 	$count = substr_count($txt, ".");
@@ -125,7 +129,7 @@
 		$c_filenameclean = clean($c_filename);
 		$count = sqlcount("SELECT * FROM teams WHERE teamname='$c_filenameclean' AND user_id='$user_id'");
 		if ($count == 0) {
-			$sql = "INSERT INTO teams (id, user_id, date, teamname, text, description) VALUES ('', '$user_id', '$date', '$c_filenameclean', '$textfile', '')";
+			$sql = "INSERT INTO teams (id, user_id, date, teamname, text, description, public) VALUES ('', '$user_id', '$date', '$c_filenameclean', '$textfile', '', '$private')";
 			mysql_query($sql) or die(mysql_error());
 		}
 		else {

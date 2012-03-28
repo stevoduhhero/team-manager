@@ -2,6 +2,10 @@
   include '../includes.php';
   include '../header.html';
 
+  $private = clean($_POST['private']);
+  if ($private != 0) {
+	$private = 1;
+  }
   if (isset($_POST['team_name'])) {
 	$teamname = clean($_POST['team_name']);
   }
@@ -29,7 +33,7 @@
 	//check if another team with the same name exists
 	$count = sqlcount("SELECT * FROM teams WHERE teamname='$teamname'");
 	if ($count == 0) {
-		$sql = "INSERT INTO teams (id, user_id, date, teamname, text, description) VALUES ('', '$user_id', '$date', '$teamname', '$import', '')";
+		$sql = "INSERT INTO teams (id, user_id, date, teamname, text, description, public) VALUES ('', '$user_id', '$date', '$teamname', '$import', '', '$private')";
 		mysql_query($sql) or die(mysql_error());
 		$team_id = sqlsingle("SELECT MAX(id) FROM teams");
 	}

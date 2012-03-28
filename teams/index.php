@@ -25,11 +25,17 @@
 	
 	echo '<h1 class="center" style="margin-top:5px;">Teams</h1>';
 	
-	$count = sqlcount("SELECT * FROM teams WHERE user_id='$id'");
+	$count = sqlcount("SELECT * FROM teams WHERE user_id='$id' AND public='1'");
+	if ($user_id == $id) {
+		$count = sqlcount("SELECT * FROM teams WHERE user_id='$user_id'");
+	}
 	echo '<div class="box">In total ', $cusername ,' has <b>', $count , '</b> teams.</div>';
 	
 	echo '<div class="ul-teams">';
-	$sql = "SELECT * FROM teams WHERE user_id='$id' ORDER BY id DESC";
+	$sql = "SELECT * FROM teams WHERE user_id='$id' AND public='1' ORDER BY id DESC";
+	if ($user_id == $id) {
+		$sql = "SELECT * FROM teams WHERE user_id='$id' ORDER BY id DESC";
+	}
 	$query = mysql_query($sql) or die(mysql_error());
 	while($array = mysql_fetch_array($query)) {
 		$teamname = htmlspecialchars($array['teamname']);

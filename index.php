@@ -6,7 +6,7 @@
 	//latest teams
 	echo '<h2>Latest Teams:</h2>';
 	echo '<div class="ul-teams">';
-	$sql = "SELECT * FROM teams ORDER BY id DESC LIMIT 10";
+	$sql = "SELECT * FROM teams WHERE public='1' ORDER BY id DESC LIMIT 10";
 	$query = mysql_query($sql) or die(mysql_error());
 	while($array = mysql_fetch_array($query)) {
 		$teamname = htmlspecialchars($array['teamname']);
