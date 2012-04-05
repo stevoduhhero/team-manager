@@ -422,6 +422,53 @@ a .li-team {
 .search-result:hover {
 	text-decoration: none;
 }
+.content-textarea {
+	padding: 1%;
+	width: 98%;
+	min-height: 200px;
+	max-height: 500px;
+}
+.title-input {
+	width: 98%;
+	font-size: 15px;
+	padding: 1%;
+}
+.button {
+	padding: 5px;
+	margin-top: 5px;
+	border: 1px solid #b6b6b6;
+	background: #f6f6f6;
+	cursor: pointer;
+}
+.button:hover {
+	background: #e6e6e6;
+}
+.paste-title {
+	background: #7D26CD;
+	color: white;
+	margin: -1%;
+	margin-bottom: 0;
+}
+.paste-info {
+	margin: -1%;
+	margin-top: 0;
+	margin-bottom: 0;
+	text-align: left;
+}
+.paste-content {
+	width: 100%;
+	min-height: 100px;
+}
+.paste-result {
+	background: #7D26CD;
+	padding: 5px;
+	margin: 5px;
+	border: 1px solid black;
+}
+.paste-result a {
+	color: white;
+	font-weight: 900;
+}
 </style>
 </head>
 <body>
@@ -445,11 +492,13 @@ function closenotice() {
 <?php
 	if (!isset($_SESSION['username'])) {
 		echo '<a href="/', $foldername, '">Home</a>';
+		echo '<a href="/pasty/">Pasty</a>';
 		echo '<a href="/', $foldername, '/search.php">Search</a>';
 		echo '<a href="/', $foldername, '/register.php">Register</a>';
 	}
 	else {
 		echo '<a href="/', $foldername, '">Home</a>';
+		echo '<a href="/pasty/">Pasty</a>';
 		echo '<a href="javascript:notice($(\'.search-container\').html());">Search</a>';
 		echo '<a href="/', $foldername, '/teams?id=', $user_id, '">Team Manager</a>';
 		echo '<a href="/', $foldername, '/logout.php">Logout</a>';
